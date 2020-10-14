@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import styled from 'styled-components';
 import VideoComponent from "./VideoComponent";
 
 interface webRTCProps {
@@ -20,12 +21,16 @@ const WebRTCContainer:React.FC<webRTCProps> = () => {
     }, []);
 
     return (
-        <div>
+        <Container>
             <VideoComponent mediaStream={localStream} />
             <VideoComponent mediaStream={localStream} />
             <VideoComponent mediaStream={localStream} />
-        </div>
+        </Container>
     );
 };
+
+const Container = styled.div`
+    display:flex;
+`;
 
 export default WebRTCContainer;
