@@ -13,6 +13,7 @@ const VideoComponent: React.FC<VideoProps> = ({mediaStream}) =>{
     }
         
     useEffect (()=>{
+        console.log(mediaStream);
         if (!videoRef.current)
             return;
         console.log(videoRef.current.buffered);

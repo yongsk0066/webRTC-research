@@ -148,7 +148,7 @@ const WebRTCContainer: React.FC<webRTCProps> = () => {
         if (isInitiator) {
             maybeStart();
         }
-    }, [localStream, isInitiator, isChannelReady]);
+    }, [localStream]);
 
 
     useEffect(()=>{
