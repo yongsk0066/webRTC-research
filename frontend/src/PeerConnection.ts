@@ -1,4 +1,4 @@
-import { Socket } from "socket.io-client";
+import socket from './socket';
 
 const pcConfig = { 
     iceServers: [{ 
@@ -6,6 +6,14 @@ const pcConfig = {
     }] 
 };
 
-let pc = new RTCPeerConnection(pcConfig);
+
+
+
+
+
+
+
+
+
 
 export default RTCPeerConnection;
