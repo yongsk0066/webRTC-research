@@ -15,7 +15,7 @@ io.sockets.on('connection', function(socket) {
   function log() {
     var array = ['Message from server:'];
     array.push.apply(array, arguments);
-    console.log(array);
+    // console.log(array);
     socket.emit('log', array);
   }
 
