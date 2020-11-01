@@ -8,4 +8,4 @@ const pcConfig = {
 
 let pc = new RTCPeerConnection(pcConfig);
 
-export default PeerConnection;
+export default RTCPeerConnection;
