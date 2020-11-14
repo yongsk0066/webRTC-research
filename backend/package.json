@@ -5,6 +5,8 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "node-static": "^0.7.11",
+    "peer-data": "^3.2.5",
+    "peer-data-server": "^1.0.10",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
