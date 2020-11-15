@@ -20,7 +20,7 @@ ReactDOM.render(
     signaling={{
       dispatcher: dispatcher,
       url:
-        process.env.NODE_ENV !== "production" ? "http://52.79.51.112:8080" : "http://52.79.51.112:8080",
+        process.env.NODE_ENV !== "production" ? "http://yongseok.shop" : "http://52.79.51.112:8080",
     }}
   >
     <UserMediaProvider constraints={{ audio: true, video: true }}>
