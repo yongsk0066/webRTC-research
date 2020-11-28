@@ -3,7 +3,7 @@ const path = require("path");
 const http = require("http");
 const PeerDataServer = require("peer-data-server");
 
-const PORT = parseInt(process.env.PORT, 10) || (process.env.NODE_ENV === "production" ? 443 : 3001);
+const PORT = parseInt(process.env.PORT, 10) || (process.env.NODE_ENV === "production" ? 443 : 443);
 
 const app = express();
 
