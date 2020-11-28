@@ -31,7 +31,7 @@ const WebRTCContainer = () => {
         <Container>
             {username ? (
                 <>
-                <Room stream={stream} />
+                <Room name={"foo"} stream={stream} />
                 </>
             ) : (
                 <>
