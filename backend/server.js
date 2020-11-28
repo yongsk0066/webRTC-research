@@ -14,6 +14,13 @@ if (process.env.NODE_ENV === "production") {
   );
 }
 
+app.use(function(req, res, next) {
+	var xForwarded = req.get('X-Forwarded-Proto');
+	if(xForwarded !== 'https') {
+    	res.redirect('https://' + req.get('Host') + req.url);
+	}
+});
+
 const appendPeerDataServer = PeerDataServer.default || PeerDataServer;
 const server = http.createServer(app);
 
